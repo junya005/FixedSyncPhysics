@@ -1,12 +1,4 @@
-﻿// src.cpp : アプリケーションのエントリ ポイントを定義します。
-//
+﻿#pragma once
 
-#include "src.h"
+#include <cstdint>
 
-using namespace std;
-
-int main()
-{
-	cout << "Hello CMake." << endl;
-	return 0;
-}
