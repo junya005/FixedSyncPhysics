@@ -27,5 +27,7 @@ public:
 	constexpr int32_t RawValue() const { return value; }
 
 	constexpr float GetFloatValue() const { return value >> SHIFT; }
+
+	constexpr int GetIntegerValue() const { return value << SHIFT; }
 };
 
