@@ -17,5 +17,11 @@ TEST(Fixed_q16_16, ValueCheck) {
 	// 半分の0.5は右に1シフトした数字であるため、0000 0000 1000 0000となり、
 	// 65536の半分であるはずなので、32768と比較
 	EXPECT_EQ(32768, testFixed2.RawValue());
+
+	Fixed_q16_16 add = testFixed1 + testFixed2;
+	EXPECT_EQ(65536 + 32768, add.RawValue());
+
+	Fixed_q16_16 subtract = testFixed1 - testFixed2;
+	EXPECT_EQ(65536 - 32768, subtract.RawValue());
 };
 
